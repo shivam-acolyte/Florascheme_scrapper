@@ -1,0 +1,65 @@
+# =============================================================================
+# FloraScheme .gitignore
+# =============================================================================
+
+# Environment variables & secrets (STRICT)
+.env
+.env.*
+!.env.example
+*.env
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Scraped Data, Checkpoints, Backups & Dumps (DO NOT COMMIT LARGE FILES)
+data/
+**/data/
+output/
+**/output/
+backups/
+**/backups/
+*.jsonl
+*.log
+*.sqlite
+*.sqlite3
+
+# Specific scraper output cache & checkpoints
+myschemescrapper/data/
+myschemescrapper/output/
+myschemescrapper/checkpoint*.jsonl
+data/backups/
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary & Scratch files
+tmp/
+temp/
+scratch/
+*.tmp
